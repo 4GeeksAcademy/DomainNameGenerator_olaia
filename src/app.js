@@ -1,11 +1,11 @@
-/* eslint-disable */
-import "bootstrap";
-import "./style.css";
+let pronombre = ["el", "mi", "su", "tu"];
+let adjetivo = ["gran", "buen", "mayor", "mejor"];
+let sustantivo = ["protecto", "sueño", "trabajo", "esfuerzo"];
 
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
-
-window.onload = function() {
-  //write your code here
-  console.log("Hello Rigo from the console!");
-};
+for (let i = 0; i < pronombre.length; i++) {
+  for (let j = 0; j < adjetivo.length; j++) {
+    for (let k = 0; k < sustantivo.length; k++) {
+      console.log(pronombre[i] + adjetivo[j] + sustantivo[k] + ".es");
+    }
+  }
+}
